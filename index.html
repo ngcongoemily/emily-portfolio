@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Ngcongo · dark/light portfolio</title>
+    <!-- same modern font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- stylesheet (includes light + dark definitions) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- defer JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <h1>Emily Ngcongo</h1>
+            <div class="header-controls">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" class="theme-btn" aria-label="Switch between dark and light mode">🌙 Dark</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About me</h2>
+                <div class="about-grid">
+                    <img src="images (4).JPEG" alt="Emily Ngcongo portrait" class="profile-photo">
+                    <div class="about-text">
+                        <p>Hi, I'm Emily Ngcongo and I genuinely enjoy coding. I love building clean, responsive interfaces and turning complex problems into simple, elegant solutions. With a sharp eye for detail and a growing toolkit, I'm eager to contribute to meaningful web projects.</p>
+                        <p class="tagline">✨ &nbsp;HTML · CSS · SQL · data with purpose</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION (alternating background in light mode, but dark mode will adapt) -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2>My skills</h2>
+                <ul class="skills-grid">
+                    <li>CSS3</li>
+                    <li>SQL</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Data Capturing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured project</h2>
+                <div class="project-card">
+                    <img src="images.JPEG" alt="Screenshot of responsive website project" class="project-img">
+                    <div class="project-description">
+                        <p>This project demonstrates my ability to design and code fully responsive websites. It combines semantic HTML, modern CSS (flex/grid), and a mobile‑first approach to create a seamless user experience.</p>
+                        <span class="project-badge">HTML / CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <p class="contact-email">📬 <a href="mailto:tlhakingwane@example.com">tlhakingwane@example.com</a></p>
+            <p class="copyright">&copy; 2025 Emily Ngcongo – all rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
